@@ -40,10 +40,6 @@ class Club < ApplicationRecord
     count_result_on(year, "draw")
   end
 
-  def homebase
-    "#{hometown}, #{country}"
-  end
-
   def average_age
     (self.players.sum(&:age) / self.players.length).to_f
   end

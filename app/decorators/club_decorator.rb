@@ -13,4 +13,8 @@ module ClubDecorator
   def homebase
     "#{hometown}, #{country}"
   end
+  
+  def full_name(player)
+    "#{player.firstname} #{player.lastname}"
+  end
 end
